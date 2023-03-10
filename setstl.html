@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Cpp Champion</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="top_container sub_pages ">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="">
+                        <span>
+                            Cpp Champion
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="Videos.html"> Videos </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Notes.html"> Notes </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header section -->
+
+    <!-- contact section -->
+
+    <section class="teacher_section layout_padding-bottom">
+        <div class="container">
+            <h2 class="main-heading">
+                Set STL
+            </h2>
+            <div>
+                <p>
+                    Sets are a type of associative container in which each element has to be unique because the value of
+                    the element identifies it. The values are stored in a specific sorted order i.e. either ascending or
+                    descending.
+                    <br>
+                    The std::set class is the part of C++ Standard Template Library (STL) and it is defined inside the
+                    &ltset&gt header file.
+
+                    Syntax:
+
+                    std::set <data_type> set_name;
+                </p>
+                <div>#include &ltset&gt</div>
+                <br>
+                <div><b> Creating a Set the Syntax is : </b>
+
+                    set &ltdata_type&gt
+                </div>
+                <br>
+                <br>
+                <div>
+                    Set Sorted in <b>Descending Order</b>
+                    By default, the std::set is sorted in ascending order. However, we have the option to change the
+                    sorting order by using the following <b>syntax.</b>
+                    <br>
+                    <br>
+                    std::set &ltdata_type, greater&ltdata_type&gt&gt set_name;
+                </div>
+                <br>
+                <br>
+                <div>
+                    <h5><b>Properties</b></h5>
+                    <ol type="a">
+                        <li><b>Storing order –</b> The set stores the elements in sorted order.</li><br>
+                        <li><b>Values Characteristics –</b> All the elements in a set have unique values.</li><br>
+                        <li><b>Values Nature –</b> The value of the element cannot be modified once it is added to the
+                            set, though it is possible to remove and then add the modified value of that element. Thus,
+                            the values are immutable.</li><br>
+                        <li><b>Search Technique – </b>Sets follow the Binary search tree implementation.</li><br>
+                        <li><b>Arranging order –</b> The values in a set are unindexed.</li><br>
+                    </ol>
+                </div>
+                <br>
+
+
+
+                <div>
+                    <h5><b>Some Basic Functions Associated with Set</b></h5>
+                    <ol>
+                        <li><b>begin() –</b> Returns an iterator to the first element in the set.</li><br>
+                        <li><b>end() – </b>Returns an iterator to the theoretical element that follows the last element
+                            in the set.</li><br>
+                        <li><b>size() – </b>Returns the number of elements in the set.</li><br>
+                        <li><b>max_size() –</b> Returns the maximum number of elements that the set can hold.</li><br>
+                        <li><b>empty() – </b>Returns whether the set is empty.</li>
+                    </ol>
+                </div>
+                <br>
+                <br>
+                <div>
+                    <h5><b>The time complexities for doing various operations on sets are:</b></h5>
+
+                    <ol>
+                        <li>Insertion of Elements – <b>O(log N)</b></li>
+                        <li>Deletion of Elements – <b>O(log N)</b></li>
+                    </ol>
+                </div>
+
+
+                <br>
+
+
+                <br>
+
+
+
+            <div>
+                <h5><b>Different Function of Set in C++ STL</b></h5>
+
+                <ol>
+                    <li><b>begin() :-&gt </b> Returns an iterator to the first element in the set.</li><br>
+                    <li><b>end() :-&gt </b> Returns an iterator to the theoretical element that follows the last element
+                        in the set.</li><br>
+                    <li><b>rbegin() :-&gt </b> Returns a reverse iterator pointing to the last element in the container.</li><br>
+                    <li><b>rend() :-&gt </b> Returns a reverse iterator pointing to the theoretical element right before
+                        the first element in the set container.</li><br>
+                    <li><b>crbegin() :-&gt </b> Returns a constant iterator pointing to the last element in the
+                        container.</li><br>
+                    <li><b>crend() :-&gt </b> Returns a constant iterator pointing to the position just before the first
+                        element in the container.</li><br>
+                    <li><b>cbegin() :-&gt </b> Returns a constant iterator pointing to the first element in the
+                        container.</li><br>
+                    <li><b>cend() :-&gt </b> Returns a constant iterator pointing to the position past the last element
+                        in the container.</li><br>
+                    <li><b>size() :-&gt </b> Returns the number of elements in the set.</li><br>
+                    <li><b>max_size() :-&gt </b> Returns the maximum number of elements that the set can hold.</li><br>
+                    <li><b>empty() :-&gt </b> Returns whether the set is empty.</li><br>
+                    <li><b>insert(const g) :-&gt </b> Adds a new element ‘g’ to the set.</li><br>
+                    <li><b>iterator insert (iterator position, const g) :-&gt </b> Adds a new element ‘g’ at the
+                        position pointed by the iterator.</li><br>
+                    <li><b>erase(iterator position) :-&gt </b> Removes the element at the position pointed by the
+                        iterator.</li><br>
+                    <li><b>erase(const g) :-&gt </b> Removes the value ‘g’ from the set.</li><br>
+                    <li><b>lear() :-&gt </b> Removes all the elements from the set.</li><br>
+                    <li><b>key_comp() / value_comp() :-&gt </b> Returns the object that determines how the elements in
+                        the set are ordered (‘<‘ by default). <li><b>find(const g) :-&gt </b> Returns an iterator to the
+                            element ‘g’ in the set if found, else returns the iterator to the end.</li><br>
+                    <li><b>count(const g) :-&gt </b> Returns 1 or 0 based on whether the element ‘g’ is present in the
+                        set or not.</li><br>
+                    <li><b>lower_bound(const g) :-&gt </b> Returns an iterator to the first element that is equivalent
+                        to ‘g’ or definitely will not go before the element ‘g’ in the set.</li><br>
+                    <li><b>upper_bound(const g) :-&gt </b>Returns an iterator to the first element that will go after
+                        the element ‘g’ in the set.</li><br>
+                    <li><b>equal_range() :-&gt </b> The function returns an iterator of pairs. (key_comp). The pair
+                        refers to the range that includes all the elements in the container which have a key equivalent
+                        to k.</li><br>
+                    <li><b> emplace() :-&gt </b>This function is used to insert a new element into the set container,
+                        only if the element to be inserted is unique and does not already exist in the set.</li><br>
+                    <li><b> emplace_hint() :-&gt </b> Returns an iterator pointing to the position where the insertion
+                        is done. If the element passed in the parameter already exists, then it returns an iterator
+                        pointing to the position where the existing element is.</li><br>
+                    <li><b> swap() :-&gt </b> This function is used to exchange the contents of two sets but the sets
+                        must be of the same type, although sizes may differ.</li><br>
+                    <li><b>operator= :-&gt </b>The ‘=’ is an operator in C++ STL that copies (or moves) a set to another
+                        set and set::operator= is the corresponding operator function.</li><br>
+                    <li><b>get_allocator() :-&gt </b> Returns the copy of the allocator object associated with the set.</li><br>
+
+                </ol>
+            </div>
+
+            
+            <div>
+                <p>To understand more clearly all the concept go through the code :-&gt</p>
+                <b><u style="color:blue "><a
+                            href="https://replit.com/@DikshaTripathi1/QuestionableAmusedTrial#arraystl.cpp"><span>Code</span>
+                        </a></u></b>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="text-align:center">
+            <a href="https://en.cppreference.com/w/cpp/container/set"><span>For more</span></a>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- end contact section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2023 All Rights Reserved By
+            <a href="https://html.design/">Cpp champion</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- progreesbar script -->
+
+
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+    </script>
+    <!-- end google map js -->
+</body>
+
+</html>

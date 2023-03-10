@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Cpp champion</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="top_container sub_pages">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/img1.png" alt="">
+                        <span>
+                            Cpp Champion
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="Videos.html"> Videos </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Notes.html"> Notes </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header section -->
+
+
+    <!-- teacher section -->
+    <section class="teacher_section layout_padding-bottom">
+        <div class="container">
+
+            <h2 class="main-heading">
+                Multimap STL
+            </h2>
+
+            <div>
+                <p>
+                    Multimap is similar to a map with the addition that multiple elements can have the same keys. Also,
+                    it is NOT required that the key-value and mapped value pair have to be unique in this case. One
+                    important thing to note about multimap is that multimap keeps all the keys in sorted order always.
+                    These properties of multimap make it very much useful in competitive programming.
+                </p>
+            </div>
+            <div>
+                <h5><b>** List of Functions of Multimap</b></h5>
+                <br>
+<ol>
+                <li><b>begin() –</b> Returns an iterator to the first element in the multimap</li><br>
+                <li><b>end() – </b>Returns an iterator to the theoretical element that follows last element in the
+                    multimap</li><br>
+                <li><b>size() –</b> Returns the number of elements in the multimap</li><br>
+                <li><b>max_size() – </b>Returns the maximum number of elements that the multimap can hold</li><br>
+                <li><b>empty() –</b> Returns whether the multimap is empty</li><br>
+                <li><b>pair&ltint,int&gt insert(keyvalue,multimapvalue) – </b>Adds a new element to the multimap</li>
+                
+            </ol>
+            <br>
+                <br>
+            </div>
+            <div>
+                <h5><b>List of Functions of Multimap</b></h5>
+                <br>
+                <ol type="A">
+                <li><a href=""><b> multimap::operator=:-&gt</b></a> It is used to assign new contents to the container by
+                    replacing the existing contents.</li><br>
+                <li><a href=""><b>multimap::crbegin() and multimap::crend() crbegin():-&gt</b></a> returns a constant reverse
+                    iterator referring to the last element in the multimap container. crend() returns a constant reverse
+                    iterator pointing to the theoretical element before the first element in the multimap.</li><br>
+                <li><a href=""><b>multimap::emplace_hint():-&gt</b></a> Insert the key and its element in the multimap
+                    container with a given hint.</li><br>
+                <li><a href=""><b>multimap clear():-&gt</b></a> Removes all the elements from the multimap.</li><br>
+                <li><a href=""><b>multimap empty():-&gt</b></a> Returns whether the multimap is empty.</li><br>
+                <li><a href=""><b>multimap maxsize():-&gt</b></a> Returns the maximum number of elements a multimap container
+                    can hold.</li><br>
+                <li><a href=""><b>multimap value_comp():-&gt</b></a> Returns the object that determines how the elements in
+                    the multimap are ordered (‘<‘ by default). <li><a href=""><b>multimap rend:-&gt</b></a> Returns a reverse
+                        iterator pointing to the theoretical element preceding to the first element of the multimap
+                        container.</li><br>
+                <li><a href=""><b>multimap::cbegin():-&gt</b></a> and multimap::cend() cbegin() returns a constant iterator
+                    referring to the first element in the multimap container. cend() returns a constant iterator
+                    pointing to the theoretical element that follows the last element in the multimap.</li><br>
+                <li><a href=""><b>multimap::swap():-&gt</b></a> Swap the contents of one multimap with another multimap of
+                    same type and size.</li><br>
+                <li><a href=""><b>multimap rbegin:-&gt</b></a> Returns an iterator pointing to the last element of the
+                    container.</li><br>
+                <li><a href=""><b>multimap size():-&gt</b></a> Returns the number of elements in the multimap container.</li><br>
+                <li><a href=""><b>multimap::emplace():-&gt</b></a> Inserts the key and its element in the multimap container.</li><br>
+                <li><a href=""><b>multimap::begin() and multimap::end() begin():-&gt</b></a> returns an iterator referring to
+                    the first element in the multimap container. end() returns an iterator to the theoretical element
+                    that follows the last element in the multimap.</li><br>
+                <li><a href=""><b>multimap upper_bound():-&gt</b></a> Returns an iterator to the first element that is
+                    equivalent to multimapped value with key-value ‘g’ or definitely will go after the element with
+                    key-value ‘g’ in the multimap.</li><br>
+                <li><a href=""><b>multimap::count():-&gt</b></a> Returns the number of matches to element with key-value ‘g’
+                    in the multimap.</li><br>
+                <li><a href=""><b>multimap::erase():-&gt</b></a> Removes the key value from the multimap.</li><br>
+                <li><a href=""><b>multimap::find():-&gt</b></a> Returns an iterator to the element with key-value ‘g’ in the
+                    multimap if found, else returns the iterator to end.</li><br>
+                <li><a href=""><b>multimap equal_range():-&gt</b></a> Returns an iterator of pairs. The pair refers to the
+                    bounds of a range that includes all the elements in the container which have a key equivalent to k.</li><br>
+                <li><a href=""><b>multimap insert():-&gt</b></a> Used to insert elements in the multimap container.</li><br>
+                <li><a href=""><b>multimap lower_bound():-&gt</b></a> Returns an iterator to the first element that is
+                    equivalent to multimapped value with key-value ‘g’ or definitely will not go before the element with
+                    key-value ‘g’ in the multimap.</li><br>
+                <li><a href=""><b>multimap key_comp():-&gt</b></a> Returns the object that determines how the elements in the
+                    multimap are ordered (‘<‘ by default).</li><br> 
+                </ol>
+                </div>
+                        <div>
+                            <p>To understand more clearly all the concept go through the code :-&gt</p>
+                            <b><u style="color:blue "><a href=""><span>Code</span>
+                                    </a></u></b>
+                        </div>
+            </div>
+            <br>
+            <br>
+            <div style="text-align:center">
+                <a href="https://en.cppreference.com/w/cpp/container/multimap"><span>For more</span></a>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- teacher section -->
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2023 All Rights Reserved By
+            <a href="https://html.design/">Cpp champion</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+    </script>
+    <!-- end google map js -->
+</body>
+
+</html>

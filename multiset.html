@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Cpp champion</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="top_container sub_pages">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/img1.png" alt="">
+                        <span>
+                            Cpp Champion
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="Videos.html"> Videos </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Notes.html"> Notes </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header section -->
+
+
+    <!-- teacher section -->
+    <section class="teacher_section layout_padding-bottom">
+        <div class="container">
+
+            <h2 class="main-heading">
+                Multiset STL
+            </h2>
+
+            <div>
+                <p>
+                    Multisets are a type of associative containers similar to the set, with the exception that multiple
+                    elements can have the same values. Some Basic Functions associated with multiset:
+                </p>
+            </div>
+            <div>
+                <ol>
+                    <li><b>begin() –</b> Returns an iterator to the first element in the multiset –> O(1)</li><br>
+                    <li><b>end() –</b> Returns an iterator to the theoretical element that follows the last element in
+                        the multiset –> O(1)</li><br>
+                    <li><b>size() –</b> Returns the number of elements in the multiset –> O(1)</li><br>
+                    <li><b>max_size() –</b> Returns the maximum number of elements that the multiset can hold –> O(1)
+                    </li><br>
+                    <li><b>empty() – </b>Returns whether the multiset is empty –> O(1)</li><br>
+                    <li><b>insert (x) –</b> Inserts the element x in the multiset –> O(log n)</li><br>
+                    <li><b>clear () –</b> Removes all the elements from the multiset –> O(n)</li><br>
+                    <li><b>erase(x) –</b> Removes all the occurrences of x –> O(log n)</li><br>
+                </ol>
+            </div>
+
+            <div>
+                <h6><b>List of the functions of multiset</b></h6>
+                <br>
+                
+                    <li><b><a href="" >begin() :-&gt </a></b> Returns an iterator to the first element in the multiset.</li><br>
+                    <li><b><a href="" >end() :-&gt </a></b> Returns an iterator to the theoretical element that follows the last element
+                        in the multiset.</li><br>
+                    <li><b><a href="" >size() :-&gt </a></b> Returns the number of elements in the multiset.</li><br>
+                    <li><b><a href="" >max_size() :-&gt </a></b> Returns the maximum number of elements that the multiset can hold.</li><br>
+                    <li><b><a href="" >empty() :-&gt </a></b> Returns whether the multiset is empty.</li><br>
+                    <li><b><a href="" >pair insert(const g) :-&gt </a></b> Adds a new element ‘g’ to the multiset.</li><br>
+                    <li><b><a href="" >iterator insert (iterator position,const g) :-&gt </a></b> Adds a new element ‘g’ at the position
+                        pointed by the iterator.</li><br>
+                    <li><b><a href="" >erase(iterator position) :-&gt </a></b> Removes the element at the position pointed by the
+                        iterator.</li><br>
+                    <li><b><a href="" >erase(const g) :-&gt </a></b> Removes the value ‘g’ from the multiset.</li><br>
+                    <li><b><a href="" >clear() :-&gt </a></b> Removes all the elements from the multiset.</li><br>
+                    <li><b><a href="" >key_comp() / value_comp() :-&gt </a></b> Returns the object that determines how the elements in
+                        the multiset are ordered (‘<‘ by default). </li><br>
+                        <li><b><a href="" >find(const g) :-&gt </a></b> Returns an iterator
+                            to the element ‘g’ in the multiset if found, else returns the iterator to end.</li><br>
+                    <li><b><a href="" >count(const g) :-&gt </a></b> Returns the number of matches to element ‘g’ in the multiset.</li><br>
+                    <li><b><a href="" >lower_bound(const g) :-&gt</a> </b> Returns an iterator to the first element that is equivalent
+                        to ‘g’ or definitely will not go before the element ‘g’ in the multiset if found, else returns
+                        the iterator to end.</li><br>
+                    <li><b><a href="" >upper_bound(const g) :-&gt </a></b> Returns an iterator to the first element that will go after
+                        the element ‘g’ in the multiset.</li><br>
+                    <li><b><a href="" >multiset::swap() :-&gt </a></b>This function is used to exchange the contents of two multisets
+                        but the sets must be of the same type, although sizes may differ.</li><br>
+                    <li><b><a href="" >multiset::operator= :-&gt </a></b> This operator is used to assign new contents to the container
+                        by replacing the existing contents.</li><br>
+                    <li><b><a href="" >multiset::emplace() :-&gt </a></b> This function is used to insert a new element into the
+                        multiset container.</li><br>
+                    <li><b><a href="" >multiset equal_range() :-&gt </a></b> Returns an iterator of pairs. The pair refers to the range
+                        that includes all the elements in the container which have a key equivalent to k.</li><br>
+                    <li><b><a href="" >multiset::emplace_hint() :-&gt </a></b>Inserts a new element in the multiset.</li><br>
+                    <li><b><a href="" >multiset::rbegin() :-&gt </a></b> Returns a reverse iterator pointing to the last element in the
+                        multiset container.</li><br>
+                    <li><b><a href="" >multiset::rend() :-&gt </a></b>Returns a reverse iterator pointing to the theoretical element
+                        right before the first element in the multiset container.</li><br>
+                    <li><b><a href="" >multiset::cbegin() :-&gt </a></b> Returns a constant iterator pointing to the first element in
+                        the container.</li><br>
+                    <li><b><a href="" >multiset::cend() :-&gt </a></b>Returns a constant iterator pointing to the position past the last
+                        element in the container.</li><br>
+                    <li><b><a href="" >multiset::crbegin() :-&gt </a></b> Returns a constant reverse iterator pointing to the last
+                        element in the container.</li><br>
+                    <li><b><a href="" >multiset::crend() :-&gt </a></b> Returns a constant reverse iterator pointing to the position
+                        just before the first element in the container.</li><br>
+                    <li><b><a href="" >multiset::get_allocator() :-&gt</a> </b> Returns a copy of the allocator object associated with
+                        the multiset.</li><br>
+                </ol>
+            </div>
+
+            <br>
+            <br>
+
+            <div>
+                <p>To understand more clearly all the concept go through the code :-&gt</p>
+                <b><u style="color:blue "><a
+                            href="https://replit.com/@DikshaTripathi1/queue#queue.cpp"><span>Code</span> </a></u></b>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="text-align:center">
+            <a href="https://en.cppreference.com/w/cpp/container/queue"><span>For more</span></a>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- teacher section -->
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2023 All Rights Reserved By
+            <a href="https://html.design/">Cpp champion</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+    </script>
+    <!-- end google map js -->
+</body>
+
+</html>

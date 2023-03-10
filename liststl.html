@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Cpp champion</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="top_container sub_pages">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/img1.png" alt="">
+                        <span>
+                            Cpp Champion
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="Videos.html"> Videos </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Notes.html"> Notes </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header section -->
+
+
+    <!-- teacher section -->
+    <section class="teacher_section layout_padding-bottom">
+        <div class="container">
+
+            <h2 class="main-heading">
+                List STL
+            </h2>
+
+            <div>
+                <p>
+                    Lists are sequence containers that allow non-contiguous memory allocation. As compared to vector,
+                    the list has slow traversal, but once a position has been found, insertion and deletion are quick.
+                    Normally, when we say a List, we talk about a doubly linked list. For implementing a singly linked
+                    list, we use a forward list.
+                </p>
+            </div>
+            <br>
+            <div>
+                <ol>
+                    <li><b>front():-&gt </b> Returns the value of the first element in the list.</li><br>
+                    <li><b> back():-&gt </b> Returns the value of the last element in the list.</li><br>
+                    <li><b>push_front(g):-&gt </b> Adds a new element ‘g’ at the beginning of the list.</li><br>
+                    <li><b>push_back(g:-&gt </b>):-&gt </b> Adds a new element ‘g’ at the end of the list.</li><br>
+                    <li><b>pop_front():-&gt </b> Removes the first element of the list, and reduces size of the list by 1.</li><br>
+                    <li><b>pop_back():-&gt </b> Removes the last element of the list, and reduces size of the list by 1.</li><br>
+                    <li><b>list::begin() begin():-&gt </b> function returns an iterator pointing to the first element of the list.</li><br>
+                    <li><b>list::end() end():-&gt </b> function returns an iterator pointing to the theoretical last element which
+                            follows the last element.</li><br>
+                    <li><b>list rbegin() and rend() rbegin():-&gt </b> returns a reverse iterator which points to the last element
+                            of the list. rend() returns a reverse iterator which points to the position before the
+                            beginning of the list.</li><br>
+                    <li><b>list cbegin() and cend() cbegin():-&gt </b> returns a constant random access iterator which points to
+                            the beginning of the list. cend() returns a constant random access iterator which points to
+                            the end of the list.</li><br>
+                    <li><b>list crbegin() and crend() crbegin():-&gt </b> returns a constant reverse iterator which points to the
+                            last element of the list i.e reversed beginning of container. crend() returns a constant
+                            reverse iterator which points to the theoretical element preceding the first element in the
+                            list i.e. the reverse end of the list.</li><br>
+                    <li><b>empty():-&gt </b> Returns whether the list is empty(1) or not(0).</li><br>
+                    <li><b>insert():-&gt </b> Inserts new elements in the list before the element at a specified position.</li><br>
+                    <li><b>erase():-&gt </b> Removes a single element or a range of elements from the list.</li><br>
+                    <li><b>assign():-&gt </b> Assigns new elements to list by replacing current elements and resizes the list.</li><br>
+                    <li><b>remove():-&gt </b> Removes all the elements from the list, which are equal to given element.</li><br>
+                    <li><b>list::remove_if():-&gt </b> Used to remove all the values from the list that correspond true to the
+                            predicate or condition given as parameter to the function.
+                    <li><b>reverse():-&gt </b> Reverses the list.</li><br>
+                    <li><b>size():-&gt </b> Returns the number of elements in the list.</li><br>
+                    <li><b>list resize():-&gt </b> Used to resize a list container.</li><br>
+                    <li><b>sort():-&gt </b> Sorts the list in increasing order.</li><br>
+                    <li><b>list max_size():-&gt </b> Returns the maximum number of elements a list container can hold.</li><br>
+                    <li><b>list unique():-&gt </b> Removes all duplicate consecutive elements from the list.</li><br>
+                    <li><b>list::emplace_front() and list::emplace_back() emplace_front():-&gt </b> function is used to insert a
+                            new element into the list container, the new element is added to the beginning of the list.
+                            emplace_back() function is used to insert a new element into the list container, the new
+                            element is added to the end of the list.</li><br>
+                    <li><b>list::clear() clear():-&gt </b> function is used to remove all the elements of the list container, thus
+                            making it size 0.</li><br>
+                    <li><b>list::operator=:-&gt </b> This operator is used to assign new contents to the container by replacing
+                            the existing contents.</li><br>
+                    <li><b>list::swap():-&gt </b> This function is used to swap the contents of one list with another list of same
+                            type and size.</li><br>
+                    <li><b>list splice():-&gt </b> Used to transfer elements from one list to another.</li><br>
+                    <li><b>list merge():-&gt </b> Merges two sorted lists into one.</li><br>
+                    <li><b>list emplace():-&gt </b> Extends list by inserting new element at a given position.</li><br>
+
+                </ol>
+            </div>
+            
+            <div>
+                <p>To understand more clearly all the concept go through the code :-&gt</p>
+                <b><u style="color:blue " ><a
+                    href="https://replit.com/@DikshaTripathi1/list#liststl.cpp"><span>Code</span> </a></u></b>
+            </div>
+        </div>
+<br>
+<br>
+
+            
+        <div style="text-align:center">
+            <a href="https://en.cppreference.com/w/cpp/container/queue"><span>For more</span></a>
+        </div>
+
+        
+        
+        </div>
+
+
+    </section>
+
+    <!-- teacher section -->
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2023 All Rights Reserved By
+            <a href="https://html.design/">Cpp champion</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+    </script>
+    <!-- end google map js -->
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Cpp champion</title>
+
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <!-- progress barstle -->
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+    <!-- font wesome stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="css/responsive.css" rel="stylesheet" />
+
+
+
+
+    <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+
+
+</head>
+
+<body>
+    <div class="top_container sub_pages">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/img1.png" alt="">
+                        <span>
+                            Cpp Champion
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html"> Home <span
+                                            class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="about.html"> About </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="Videos.html"> Videos </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Notes.html"> Notes </a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+
+                            </ul>
+                            <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                            </form>
+                        </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- end header section -->
+
+
+    <!-- teacher section -->
+    <section class="teacher_section layout_padding-bottom">
+        <div class="container">
+
+            <h2 class="main-heading">
+                Priority Queue STL
+            </h2>
+
+            <div>
+                <p>
+                    A C++ priority queue is a type of container adapter, specifically designed such that the first
+                    element of the queue is either the greatest or the smallest of all elements in the queue, and
+                    elements are in non-increasing or non-decreasing order (hence we can see that each element of the
+                    queue has a priority {fixed order}).
+                    <br>
+                    In C++ STL, the top element is always the greatest by default. We can also change it to the smallest
+                    element at the top. Priority queues are built on the top of the max heap and use an array or vector
+                    as an internal structure. In simple terms, STL Priority Queue is the implementation of <a
+                        href="">Heap Data</a>
+                    Structure.
+
+                </p>
+                <div>
+                    <p>
+                        <b>Syntax:</b>
+                        priority_queue &ltint&gt pq;
+                    </p>
+                    <br>
+                    <p>
+                        <b> How to create a min heap for the priority queue?</b><br>
+                        As we saw earlier, a priority queue is implemented as max heap by default in C++ but, it also
+                        provides us an option to change it to min heap by passing another parameter while creating a
+                        priority queue.
+                    </p>
+                    <b>Syntax:</b>
+                    priority_queue &ltint, vector&ltint&gt, greater&ltint&gt&gt gq;
+                </div>
+
+            </div>
+
+            <br>
+            <br>
+            <div>
+                <h5><b><u>Few Operations</u></b></h5>
+                <br>
+                <ol>
+                    <li><b>priority_queue::empty() :-&gt</b> Returns whether the queue is empty.    </li><br>
+                    <li><b>priority_queue::size() :-&gt</b> Returns the size of the queue.</li><br>
+                    <li><b>priority_queue::top() :-&gt</b> Returns a reference to the topmost element of the queue.</li><br>
+                    <li><b>priority_queue::push() :-&gt</b> Adds the element ‘g’ at the end of the queue.</li><br>
+                    <li><b>priority_queue::pop() :-&gt</b> Deletes the first element of the queue.</li><br>
+                    <li><b>priority_queue::swap() :-&gt</b> Used to swap the contents of two queues provided the queues
+                        must be of the same type, although sizes may differ.</li><br>
+                    <li><b>priority_queue::emplace() :-&gt</b> Used to insert a new element into the priority queue
+                        container.</li><br>
+                    <li><b>priority_queue value_type :-&gt</b> Represents the type of object stored as an element in a
+                        priority_queue. It acts as a synonym for the template parameter.</li><br>
+                </ol>
+            </div>
+            <div>
+                <p>To understand more clearly all the concept go through the code :-&gt</p>
+                <b><u style="color:blue "><a
+                            href="https://replit.com/@DikshaTripathi1/priorityqueue#priority_queue.cpp"><span>Code</span>
+                        </a></u></b>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div style="text-align:center">
+            <a href="https://en.cppreference.com/w/cpp/container/queue"><span>For more</span></a>
+        </div>
+        </div>
+
+
+    </section>
+
+    <!-- teacher section -->
+
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2023 All Rights Reserved By
+            <a href="https://html.design/">Cpp champion</a>
+        </p>
+    </section>
+    <!-- footer section -->
+
+
+    <!-- google map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+    </script>
+    <!-- end google map js -->
+</body>
+
+</html>
