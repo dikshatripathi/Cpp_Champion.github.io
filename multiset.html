@@ -122,53 +122,73 @@
             <div>
                 <h6><b>List of the functions of multiset</b></h6>
                 <br>
-                
-                    <li><b><a href="" >begin() :-&gt </a></b> Returns an iterator to the first element in the multiset.</li><br>
-                    <li><b><a href="" >end() :-&gt </a></b> Returns an iterator to the theoretical element that follows the last element
-                        in the multiset.</li><br>
-                    <li><b><a href="" >size() :-&gt </a></b> Returns the number of elements in the multiset.</li><br>
-                    <li><b><a href="" >max_size() :-&gt </a></b> Returns the maximum number of elements that the multiset can hold.</li><br>
-                    <li><b><a href="" >empty() :-&gt </a></b> Returns whether the multiset is empty.</li><br>
-                    <li><b><a href="" >pair insert(const g) :-&gt </a></b> Adds a new element ‘g’ to the multiset.</li><br>
-                    <li><b><a href="" >iterator insert (iterator position,const g) :-&gt </a></b> Adds a new element ‘g’ at the position
-                        pointed by the iterator.</li><br>
-                    <li><b><a href="" >erase(iterator position) :-&gt </a></b> Removes the element at the position pointed by the
-                        iterator.</li><br>
-                    <li><b><a href="" >erase(const g) :-&gt </a></b> Removes the value ‘g’ from the multiset.</li><br>
-                    <li><b><a href="" >clear() :-&gt </a></b> Removes all the elements from the multiset.</li><br>
-                    <li><b><a href="" >key_comp() / value_comp() :-&gt </a></b> Returns the object that determines how the elements in
-                        the multiset are ordered (‘<‘ by default). </li><br>
-                        <li><b><a href="" >find(const g) :-&gt </a></b> Returns an iterator
-                            to the element ‘g’ in the multiset if found, else returns the iterator to end.</li><br>
-                    <li><b><a href="" >count(const g) :-&gt </a></b> Returns the number of matches to element ‘g’ in the multiset.</li><br>
-                    <li><b><a href="" >lower_bound(const g) :-&gt</a> </b> Returns an iterator to the first element that is equivalent
-                        to ‘g’ or definitely will not go before the element ‘g’ in the multiset if found, else returns
-                        the iterator to end.</li><br>
-                    <li><b><a href="" >upper_bound(const g) :-&gt </a></b> Returns an iterator to the first element that will go after
-                        the element ‘g’ in the multiset.</li><br>
-                    <li><b><a href="" >multiset::swap() :-&gt </a></b>This function is used to exchange the contents of two multisets
-                        but the sets must be of the same type, although sizes may differ.</li><br>
-                    <li><b><a href="" >multiset::operator= :-&gt </a></b> This operator is used to assign new contents to the container
-                        by replacing the existing contents.</li><br>
-                    <li><b><a href="" >multiset::emplace() :-&gt </a></b> This function is used to insert a new element into the
-                        multiset container.</li><br>
-                    <li><b><a href="" >multiset equal_range() :-&gt </a></b> Returns an iterator of pairs. The pair refers to the range
-                        that includes all the elements in the container which have a key equivalent to k.</li><br>
-                    <li><b><a href="" >multiset::emplace_hint() :-&gt </a></b>Inserts a new element in the multiset.</li><br>
-                    <li><b><a href="" >multiset::rbegin() :-&gt </a></b> Returns a reverse iterator pointing to the last element in the
-                        multiset container.</li><br>
-                    <li><b><a href="" >multiset::rend() :-&gt </a></b>Returns a reverse iterator pointing to the theoretical element
-                        right before the first element in the multiset container.</li><br>
-                    <li><b><a href="" >multiset::cbegin() :-&gt </a></b> Returns a constant iterator pointing to the first element in
-                        the container.</li><br>
-                    <li><b><a href="" >multiset::cend() :-&gt </a></b>Returns a constant iterator pointing to the position past the last
-                        element in the container.</li><br>
-                    <li><b><a href="" >multiset::crbegin() :-&gt </a></b> Returns a constant reverse iterator pointing to the last
-                        element in the container.</li><br>
-                    <li><b><a href="" >multiset::crend() :-&gt </a></b> Returns a constant reverse iterator pointing to the position
-                        just before the first element in the container.</li><br>
-                    <li><b><a href="" >multiset::get_allocator() :-&gt</a> </b> Returns a copy of the allocator object associated with
-                        the multiset.</li><br>
+
+                <li><b><a href="">begin() :-&gt </a></b> Returns an iterator to the first element in the multiset.</li>
+                <br>
+                <li><b><a href="">end() :-&gt </a></b> Returns an iterator to the theoretical element that follows the
+                    last element
+                    in the multiset.</li><br>
+                <li><b><a href="">size() :-&gt </a></b> Returns the number of elements in the multiset.</li><br>
+                <li><b><a href="">max_size() :-&gt </a></b> Returns the maximum number of elements that the multiset can
+                    hold.</li><br>
+                <li><b><a href="">empty() :-&gt </a></b> Returns whether the multiset is empty.</li><br>
+                <li><b><a href="">pair insert(const g) :-&gt </a></b> Adds a new element ‘g’ to the multiset.</li><br>
+                <li><b><a href="">iterator insert (iterator position,const g) :-&gt </a></b> Adds a new element ‘g’ at
+                    the position
+                    pointed by the iterator.</li><br>
+                <li><b><a href="">erase(iterator position) :-&gt </a></b> Removes the element at the position pointed by
+                    the
+                    iterator.</li><br>
+                <li><b><a href="">erase(const g) :-&gt </a></b> Removes the value ‘g’ from the multiset.</li><br>
+                <li><b><a href="">clear() :-&gt </a></b> Removes all the elements from the multiset.</li><br>
+                <li><b><a href="">key_comp() / value_comp() :-&gt </a></b> Returns the object that determines how the
+                    elements in
+                    the multiset are ordered (‘<‘ by default). </li><br>
+                <li><b><a href="">find(const g) :-&gt </a></b> Returns an iterator
+                    to the element ‘g’ in the multiset if found, else returns the iterator to end.</li><br>
+                <li><b><a href="">count(const g) :-&gt </a></b> Returns the number of matches to element ‘g’ in the
+                    multiset.</li><br>
+                <li><b><a href="">lower_bound(const g) :-&gt</a> </b> Returns an iterator to the first element that is
+                    equivalent
+                    to ‘g’ or definitely will not go before the element ‘g’ in the multiset if found, else returns
+                    the iterator to end.</li><br>
+                <li><b><a href="">upper_bound(const g) :-&gt </a></b> Returns an iterator to the first element that will
+                    go after
+                    the element ‘g’ in the multiset.</li><br>
+                <li><b><a href="">multiset::swap() :-&gt </a></b>This function is used to exchange the contents of two
+                    multisets
+                    but the sets must be of the same type, although sizes may differ.</li><br>
+                <li><b><a href="">multiset::operator= :-&gt </a></b> This operator is used to assign new contents to the
+                    container
+                    by replacing the existing contents.</li><br>
+                <li><b><a href="">multiset::emplace() :-&gt </a></b> This function is used to insert a new element into
+                    the
+                    multiset container.</li><br>
+                <li><b><a href="">multiset equal_range() :-&gt </a></b> Returns an iterator of pairs. The pair refers to
+                    the range
+                    that includes all the elements in the container which have a key equivalent to k.</li><br>
+                <li><b><a href="">multiset::emplace_hint() :-&gt </a></b>Inserts a new element in the multiset.</li><br>
+                <li><b><a href="">multiset::rbegin() :-&gt </a></b> Returns a reverse iterator pointing to the last
+                    element in the
+                    multiset container.</li><br>
+                <li><b><a href="">multiset::rend() :-&gt </a></b>Returns a reverse iterator pointing to the theoretical
+                    element
+                    right before the first element in the multiset container.</li><br>
+                <li><b><a href="">multiset::cbegin() :-&gt </a></b> Returns a constant iterator pointing to the first
+                    element in
+                    the container.</li><br>
+                <li><b><a href="">multiset::cend() :-&gt </a></b>Returns a constant iterator pointing to the position
+                    past the last
+                    element in the container.</li><br>
+                <li><b><a href="">multiset::crbegin() :-&gt </a></b> Returns a constant reverse iterator pointing to the
+                    last
+                    element in the container.</li><br>
+                <li><b><a href="">multiset::crend() :-&gt </a></b> Returns a constant reverse iterator pointing to the
+                    position
+                    just before the first element in the container.</li><br>
+                <li><b><a href="">multiset::get_allocator() :-&gt</a> </b> Returns a copy of the allocator object
+                    associated with
+                    the multiset.</li><br>
                 </ol>
             </div>
 
@@ -178,23 +198,30 @@
             <div>
                 <p>To understand more clearly all the concept go through the code :-&gt</p>
                 <b><u style="color:blue "><a
-                            href="https://replit.com/@DikshaTripathi1/multiset#multiset.cpp"><span>Code</span> </a></u></b>
+                            href="https://replit.com/@DikshaTripathi1/multiset#multiset.cpp"><span>Code</span>
+                        </a></u></b>
+            </div>
+
+            <br>
+
+            <br>
+            <p><b>This video is going to be very helpful: </b></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RRVYpIET_RU?start=2620"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br><br>
+
+            <div style="text-align:center">
+                <a href="https://en.cppreference.com/w/cpp/container/multiset"><span>For more</span></a>
+            </div>
+            <div style="text-align:center">
+                <a href="https://www.geeksforgeeks.org/multiset-in-cpp-stl/"><span>For more</span></a>
             </div>
         </div>
-        <br>
-        <br>
-        <div style="text-align:center">
-            <a href="https://en.cppreference.com/w/cpp/container/multiset"><span>For more</span></a>
-        </div>
-
-        <br><br>
-        <div style="text-align:center">
-            <a href="https://www.geeksforgeeks.org/multiset-in-cpp-stl/"><span>For more</span></a>
-        </div>
-        </div>
-
-
     </section>
+
+
 
     <!-- teacher section -->
 

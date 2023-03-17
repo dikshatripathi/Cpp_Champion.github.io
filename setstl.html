@@ -173,75 +173,96 @@
 
 
 
-            <div>
-                <h5><b>Different Function of Set in C++ STL</b></h5>
+                <div>
+                    <h5><b>Different Function of Set in C++ STL</b></h5>
 
-                <ol>
-                    <li><b>begin() :-&gt </b> Returns an iterator to the first element in the set.</li><br>
-                    <li><b>end() :-&gt </b> Returns an iterator to the theoretical element that follows the last element
-                        in the set.</li><br>
-                    <li><b>rbegin() :-&gt </b> Returns a reverse iterator pointing to the last element in the container.</li><br>
-                    <li><b>rend() :-&gt </b> Returns a reverse iterator pointing to the theoretical element right before
-                        the first element in the set container.</li><br>
-                    <li><b>crbegin() :-&gt </b> Returns a constant iterator pointing to the last element in the
-                        container.</li><br>
-                    <li><b>crend() :-&gt </b> Returns a constant iterator pointing to the position just before the first
-                        element in the container.</li><br>
-                    <li><b>cbegin() :-&gt </b> Returns a constant iterator pointing to the first element in the
-                        container.</li><br>
-                    <li><b>cend() :-&gt </b> Returns a constant iterator pointing to the position past the last element
-                        in the container.</li><br>
-                    <li><b>size() :-&gt </b> Returns the number of elements in the set.</li><br>
-                    <li><b>max_size() :-&gt </b> Returns the maximum number of elements that the set can hold.</li><br>
-                    <li><b>empty() :-&gt </b> Returns whether the set is empty.</li><br>
-                    <li><b>insert(const g) :-&gt </b> Adds a new element ‘g’ to the set.</li><br>
-                    <li><b>iterator insert (iterator position, const g) :-&gt </b> Adds a new element ‘g’ at the
-                        position pointed by the iterator.</li><br>
-                    <li><b>erase(iterator position) :-&gt </b> Removes the element at the position pointed by the
-                        iterator.</li><br>
-                    <li><b>erase(const g) :-&gt </b> Removes the value ‘g’ from the set.</li><br>
-                    <li><b>lear() :-&gt </b> Removes all the elements from the set.</li><br>
-                    <li><b>key_comp() / value_comp() :-&gt </b> Returns the object that determines how the elements in
-                        the set are ordered (‘<‘ by default). <li><b>find(const g) :-&gt </b> Returns an iterator to the
-                            element ‘g’ in the set if found, else returns the iterator to the end.</li><br>
-                    <li><b>count(const g) :-&gt </b> Returns 1 or 0 based on whether the element ‘g’ is present in the
-                        set or not.</li><br>
-                    <li><b>lower_bound(const g) :-&gt </b> Returns an iterator to the first element that is equivalent
-                        to ‘g’ or definitely will not go before the element ‘g’ in the set.</li><br>
-                    <li><b>upper_bound(const g) :-&gt </b>Returns an iterator to the first element that will go after
-                        the element ‘g’ in the set.</li><br>
-                    <li><b>equal_range() :-&gt </b> The function returns an iterator of pairs. (key_comp). The pair
-                        refers to the range that includes all the elements in the container which have a key equivalent
-                        to k.</li><br>
-                    <li><b> emplace() :-&gt </b>This function is used to insert a new element into the set container,
-                        only if the element to be inserted is unique and does not already exist in the set.</li><br>
-                    <li><b> emplace_hint() :-&gt </b> Returns an iterator pointing to the position where the insertion
-                        is done. If the element passed in the parameter already exists, then it returns an iterator
-                        pointing to the position where the existing element is.</li><br>
-                    <li><b> swap() :-&gt </b> This function is used to exchange the contents of two sets but the sets
-                        must be of the same type, although sizes may differ.</li><br>
-                    <li><b>operator= :-&gt </b>The ‘=’ is an operator in C++ STL that copies (or moves) a set to another
-                        set and set::operator= is the corresponding operator function.</li><br>
-                    <li><b>get_allocator() :-&gt </b> Returns the copy of the allocator object associated with the set.</li><br>
+                    <ol>
+                        <li><b>begin() :-&gt </b> Returns an iterator to the first element in the set.</li><br>
+                        <li><b>end() :-&gt </b> Returns an iterator to the theoretical element that follows the last
+                            element
+                            in the set.</li><br>
+                        <li><b>rbegin() :-&gt </b> Returns a reverse iterator pointing to the last element in the
+                            container.</li><br>
+                        <li><b>rend() :-&gt </b> Returns a reverse iterator pointing to the theoretical element right
+                            before
+                            the first element in the set container.</li><br>
+                        <li><b>crbegin() :-&gt </b> Returns a constant iterator pointing to the last element in the
+                            container.</li><br>
+                        <li><b>crend() :-&gt </b> Returns a constant iterator pointing to the position just before the
+                            first
+                            element in the container.</li><br>
+                        <li><b>cbegin() :-&gt </b> Returns a constant iterator pointing to the first element in the
+                            container.</li><br>
+                        <li><b>cend() :-&gt </b> Returns a constant iterator pointing to the position past the last
+                            element
+                            in the container.</li><br>
+                        <li><b>size() :-&gt </b> Returns the number of elements in the set.</li><br>
+                        <li><b>max_size() :-&gt </b> Returns the maximum number of elements that the set can hold.</li>
+                        <br>
+                        <li><b>empty() :-&gt </b> Returns whether the set is empty.</li><br>
+                        <li><b>insert(const g) :-&gt </b> Adds a new element ‘g’ to the set.</li><br>
+                        <li><b>iterator insert (iterator position, const g) :-&gt </b> Adds a new element ‘g’ at the
+                            position pointed by the iterator.</li><br>
+                        <li><b>erase(iterator position) :-&gt </b> Removes the element at the position pointed by the
+                            iterator.</li><br>
+                        <li><b>erase(const g) :-&gt </b> Removes the value ‘g’ from the set.</li><br>
+                        <li><b>lear() :-&gt </b> Removes all the elements from the set.</li><br>
+                        <li><b>key_comp() / value_comp() :-&gt </b> Returns the object that determines how the elements
+                            in
+                            the set are ordered (‘<‘ by default). <li><b>find(const g) :-&gt </b> Returns an iterator to
+                                the
+                                element ‘g’ in the set if found, else returns the iterator to the end.</li><br>
+                        <li><b>count(const g) :-&gt </b> Returns 1 or 0 based on whether the element ‘g’ is present in
+                            the
+                            set or not.</li><br>
+                        <li><b>lower_bound(const g) :-&gt </b> Returns an iterator to the first element that is
+                            equivalent
+                            to ‘g’ or definitely will not go before the element ‘g’ in the set.</li><br>
+                        <li><b>upper_bound(const g) :-&gt </b>Returns an iterator to the first element that will go
+                            after
+                            the element ‘g’ in the set.</li><br>
+                        <li><b>equal_range() :-&gt </b> The function returns an iterator of pairs. (key_comp). The pair
+                            refers to the range that includes all the elements in the container which have a key
+                            equivalent
+                            to k.</li><br>
+                        <li><b> emplace() :-&gt </b>This function is used to insert a new element into the set
+                            container,
+                            only if the element to be inserted is unique and does not already exist in the set.</li><br>
+                        <li><b> emplace_hint() :-&gt </b> Returns an iterator pointing to the position where the
+                            insertion
+                            is done. If the element passed in the parameter already exists, then it returns an iterator
+                            pointing to the position where the existing element is.</li><br>
+                        <li><b> swap() :-&gt </b> This function is used to exchange the contents of two sets but the
+                            sets
+                            must be of the same type, although sizes may differ.</li><br>
+                        <li><b>operator= :-&gt </b>The ‘=’ is an operator in C++ STL that copies (or moves) a set to
+                            another
+                            set and set::operator= is the corresponding operator function.</li><br>
+                        <li><b>get_allocator() :-&gt </b> Returns the copy of the allocator object associated with the
+                            set.</li><br>
 
-                </ol>
+                    </ol>
+                </div>
+
+
+                <div>
+                    <p>To understand more clearly all the concept go through the code :-&gt</p>
+                    <b><u style="color:blue "><a
+                                href="https://replit.com/@DikshaTripathi1/QuestionableAmusedTrial#arraystl.cpp"><span>Code</span>
+                            </a></u></b>
+                </div>
+
+                <br>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WgMPrLX-zsA?start=2300" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                &nbsp;
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RRVYpIET_RU?start=2330" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <br><br>
+                <div style="text-align:center">
+                    <a href="https://en.cppreference.com/w/cpp/container/set"><span>For more</span></a>
+                </div>
+
             </div>
-
-            
-            <div>
-                <p>To understand more clearly all the concept go through the code :-&gt</p>
-                <b><u style="color:blue "><a
-                            href="https://replit.com/@DikshaTripathi1/QuestionableAmusedTrial#arraystl.cpp"><span>Code</span>
-                        </a></u></b>
-            </div>
-        </div>
-        <br>
-        <br>
-        <div style="text-align:center">
-            <a href="https://en.cppreference.com/w/cpp/container/set"><span>For more</span></a>
-        </div>
-
-        </div>
     </section>
 
 
